@@ -1,19 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Homepage from "./views/homepage";
 import {
   CssBaseline,
-  AppBar,
-  Toolbar,
-  IconButton,
   Typography,
-  Button,
   colors,
   makeStyles,
 } from "@material-ui/core";
-import { Menu } from "@material-ui/icons";
 import { red } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({

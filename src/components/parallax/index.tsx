@@ -1,5 +1,5 @@
-import React, { useRef, useEffect, useState } from "react";
-import { makeStyles, Theme, createStyles, Typography } from "@material-ui/core";
+import React, { useRef } from "react";
+import { makeStyles, createStyles, Typography } from "@material-ui/core";
 
 interface Props {
   imageSource: string;
@@ -8,7 +8,7 @@ interface Props {
 const Parallax = (props: Props) => {
   const bannerRef = useRef<HTMLImageElement>(null);
 
-  const useStyles = makeStyles((theme: Theme) =>
+  const useStyles = makeStyles(() =>
     createStyles({
       root: {
         textAlign: "center",

@@ -5,14 +5,10 @@ import {
   makeStyles,
   Theme,
   createStyles,
-  Paper,
   Card,
   CardActionArea,
   CardMedia,
   CardContent,
-  CardActions,
-  Button,
-  colors,
 } from "@material-ui/core";
 
 interface MenuGalleryItemProps {

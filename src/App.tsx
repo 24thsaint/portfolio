@@ -10,16 +10,35 @@ import {
   IconButton,
   Typography,
   Button,
+  colors,
+  makeStyles,
 } from "@material-ui/core";
 import { Menu } from "@material-ui/icons";
+import { red } from "@material-ui/core/colors";
 
 const theme = createMuiTheme({
   palette: {
     type: "dark",
+    primary: red,
+  },
+});
+
+let useStyles = makeStyles({
+  footer: {
+    position: "relative",
+    backgroundColor: colors.grey[900],
+    height: "40px",
+    marginTop: "30px",
+  },
+  footerContent: {
+    position: "absolute",
+    top: "25%",
   },
 });
 
 export default function App() {
+  const classes = useStyles();
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -36,6 +55,11 @@ export default function App() {
           </Route>
         </Switch>
       </Router>
+      <footer className={classes.footer}>
+        <Typography variant="subtitle2" className={classes.footerContent}>
+          Copyright 2020, Noren Arevalo
+        </Typography>
+      </footer>
     </ThemeProvider>
   );
 }

@@ -39,14 +39,14 @@ export default function App() {
       <CssBaseline />
       <Router>
         <Switch>
-          <Route path="/">
-            <Homepage />
-          </Route>
-          <Route path="/about">
-            <div>About</div>
+          <Route path="/curriculum-vitae">
+            <div>Sanity Check for curriculum vitae</div>
           </Route>
           <Route path="/users">
             <div>Users</div>
+          </Route>
+          <Route path="/">
+            <Homepage />
           </Route>
         </Switch>
       </Router>

@@ -39,6 +39,7 @@ export default function Homepage() {
               title="Curriculum Vitae"
               caption="A formal introduction"
               image="/images/stock-cv.jpg"
+              link="/curriculum-vitae"
             />
             <MenuGalleryItem
               title="About Me"

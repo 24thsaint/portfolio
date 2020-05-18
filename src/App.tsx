@@ -52,7 +52,7 @@ export default function App() {
       </Router>
       <footer className={classes.footer}>
         <Typography variant="subtitle2" className={classes.footerContent}>
-          Copyright 2020, Noren Arevalo
+          Copyright 2020, Rave Arevalo.
         </Typography>
       </footer>
     </ThemeProvider>

@@ -11,6 +11,7 @@ import {
 import Parallax from "../../components/parallax";
 import MenuGallery from "./components/MenuGallery";
 import MenuGalleryItem from "./components/MenuGalleryItem";
+import SectionDivider from "../../components/section-divider";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -35,14 +36,39 @@ export default function Homepage() {
         <Box paddingTop={5}>
           <MenuGallery>
             <MenuGalleryItem
-              title="Title"
-              caption="Short Description"
-              image="/images/stock-computer-laptop.jpg"
+              title="Curriculum Vitae"
+              caption="A formal introduction"
+              image="/images/stock-cv.jpg"
             />
-            {new Array(8).fill("").map((elem, index) => (
+            <MenuGalleryItem
+              title="About Me"
+              caption="For silly things"
+              image="/images/stock-about-me.jpg"
+            />
+          </MenuGallery>
+          <SectionDivider>
+            <Typography variant="h5">Portfolio</Typography>
+          </SectionDivider>
+          <MenuGallery>
+            <MenuGalleryItem
+              title="Image Compression"
+              caption="Using Discrete Cosine Transform"
+              image="/images/stock-image-compression.jpg"
+            />
+            <MenuGalleryItem
+              title="Lottery Analysis"
+              caption="When I was obsessed with gambling"
+              image="/images/stock-lottery.jpg"
+            />
+            <MenuGalleryItem
+              title="Wine House"
+              caption="Blockchain-based asset tracking"
+              image="/images/stock-ethereum.jpg"
+            />
+            {new Array(6).fill("").map((elem, index) => (
               <MenuGalleryItem
-                title="Title"
-                caption="Short Description"
+                title="Coming Soon"
+                caption="Wait for it..."
                 key={index}
                 id={index + 50}
               />

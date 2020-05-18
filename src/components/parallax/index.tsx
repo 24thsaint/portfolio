@@ -39,8 +39,8 @@ const Parallax = (props: Props) => {
         ref={bannerRef}
       />
       <div className={classes.innerContent}>
-        <Typography variant="h2">Noren Arevalo</Typography>
-        <Typography variant="caption">Rave</Typography>
+        <Typography variant="h2">Rave Arevalo</Typography>
+        <Typography variant="caption">Noren</Typography>
       </div>
     </div>
   );
